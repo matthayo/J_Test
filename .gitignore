@@ -1,0 +1,19 @@
+# Exclude metadata and configuration files and directory
+**/.metadata/**
+**/.setting/**
+**/bin/**
+**/.classpath*
+**/.project*
+build.fxbuild*
+**/*.exe
+**/*.class
+
+# Exclude zip files
+**/*.zip
+
+# Exclude student's project
+_**
+
+# Do not delete the _bin directory
+!/_bin
+/.metadata/

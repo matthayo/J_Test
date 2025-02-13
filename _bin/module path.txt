@@ -1,0 +1,7 @@
+--module-path "C:\Users\Mathew\eclipse\java-tools\javafx-sdk-18\lib" --add-modules javafx.controls,javafx.fxml
+
+
+https://openjfx.io/
+
+
+https://docs.oracle.com/javase/8/javafx/api/allclasses-noframe.html
