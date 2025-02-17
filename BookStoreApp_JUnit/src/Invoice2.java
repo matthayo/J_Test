@@ -1,8 +1,8 @@
 
-public class Invoice {
+public class Invoice2 {
 	
 	private String customer;
-	private Book books[];
+	private Book2 books[];
 	
 	private static double tax;
 	
@@ -10,10 +10,10 @@ public class Invoice {
 	private int numberOfBooks = 0;
 	private static int numberOfInvoices = 0;
 	
-	public Invoice(String customer) {
+	public Invoice2(String customer) {
 		
 		this.customer = customer;
-		books = new Book[MAX_NUMBER_OF_BOOKS];
+		books = new Book2[MAX_NUMBER_OF_BOOKS];
 		numberOfInvoices++;
 	}
 
@@ -59,12 +59,12 @@ public class Invoice {
 		return numberOfInvoices;		
 	}
 	
-	public void addBook(String title, double weight, double price) throws ArrayIndexOutOfBoundsException{
+	public void addBook(String title, double price, double weight) throws ArrayIndexOutOfBoundsException{
 		
 		if(numberOfBooks >= MAX_NUMBER_OF_BOOKS)
 			throw new ArrayIndexOutOfBoundsException("Max number exceeded!");
 		else 
-			books[numberOfBooks++] = new Book(title, weight, price);
+			books[numberOfBooks++] = new Book2(title, price, weight);
 	}
 
 	public void adjustPrice(int bookNum, double priceAdjustment) throws ArrayIndexOutOfBoundsException {
